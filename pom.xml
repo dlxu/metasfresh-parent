@@ -8,9 +8,7 @@
 
 	<packaging>pom</packaging>
 
-	<description>
-Default parent pom with common settings (e.g. java file encoding) to be used by all maven projects.
-	</description>
+	<description>Default parent pom with common settings (e.g. java file encoding) to be used by all maven projects.</description>
 
 	<url>http://www.metasfresh.com/</url>
 
@@ -35,16 +33,13 @@ Default parent pom with common settings (e.g. java file encoding) to be used by 
 
 		<!--
 			3.8.0 is currently the latest and greatest. Spring boot declares some 2.x version that 
-			see http://docs.spring.io/spring-boot/docs/1.2.3.RELEASE/reference/htmlsingle/#howto-customize-dependency-versions-with-maven 
-		-->
+			see http://docs.spring.io/spring-boot/docs/1.2.3.RELEASE/reference/htmlsingle/#howto-customize-dependency-versions-with-maven -->
 		<assertj.version>3.8.0</assertj.version>
 
-		<!-- right now 6.2.2 is the latest, but there we suffer from http://community.jaspersoft.com/jasperreports-library/issues/7521 -->
-		<jasperreports.version>6.2.1</jasperreports.version>
-
-		<!-- FRESH-397: jasper 6.2.1 uses poi and zxing with theses versions -->
-		<!-- actually, jasper-6.2.1 accidentally uses 2.1.7.js5-SNAPSHOT, but we don't-->
-		<itext.version>2.1.7.js5</itext.version>
+		<!-- https://github.com/metasfresh/metasfresh/issues/2972 -->
+		<jasperreports.version>6.4.3</jasperreports.version>
+		<!-- 2.1.7.js6 is the version used by jasperreport 6.4.3 -->
+		<itext.version>2.1.7.js6</itext.version>
 		
 		<!-- This property is set by jacoco and used in the surefire config fourther down
 			Set it to empty to avoid JVM startup error Could not find or load main class @{argLine} when run without jacoco
