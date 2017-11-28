@@ -753,6 +753,7 @@ Failure to find de.metas:de.metas.parent:pom:(1.0.0,3) in (URL ...) was cached i
 							<dependency>
 								<groupId>org.springframework</groupId>
 								<artifactId>spring-core</artifactId>
+								<version>4.3.8.RELEASE</version>
 							</dependency>
 
 							<!-- required to compile reports with barcodes -->
